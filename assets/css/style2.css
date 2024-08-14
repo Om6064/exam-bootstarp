@@ -1,0 +1,9 @@
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    z-index: 999;
+}

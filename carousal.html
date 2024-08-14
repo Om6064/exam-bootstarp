@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousal</title>
+    <link rel="stylesheet" href="./assets/css/bootstarp.min.css">
+    <link rel="stylesheet" href="./assets/css/style2.css">
+</head>
+
+<body>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h1 class="text-center absolute text-white">this is picture about girgit</h1>
+                <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" class="d-block w-100 relative" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <h1 class="text-center absolute text-black">this is picture about birds</h1>
+                <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" class="d-block w-100 relative" alt="...">
+            </div>
+            <div class="carousel-item">
+                <h1 class="text-center absolute text-white">this is picture about leave</h1>
+                <img src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <script src="./assets/js/bootsrap.bundle.js"></script>
+
+    <script>
+        const myCarouselElement = document.querySelector('#myCarousel')
+
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+            interval: 2000,
+            touch: false
+        })
+    </script>
+</body>
+
+</html>
